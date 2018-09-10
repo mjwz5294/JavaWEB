@@ -21,4 +21,10 @@ httpclient，commonlang，commonbean，commonio，commonfile，
 （2）动态代理技术：https://www.cnblogs.com/fengmingyue/p/6092151.html
 6、druid重点学习如何使用，参考：https://www.imooc.com/article/25523
 （1）除了有数据库连接池功能，还提供了一些扩展功能，尤其是监控功能
+（2）配置方面，web.xml的配置中比较陌生的，也就是这个地方了
+
+二、web.xml中的配置
+1、SpringMVC配置，主要就是提供SpringMVC配置文件的位置，然后在该文件中做具体配置
+2、druid配置
+3、fastjson的配置
 
