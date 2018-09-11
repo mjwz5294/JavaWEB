@@ -1,0 +1,29 @@
+一、项目创建方式
+1、最简单的，直接拷贝现成的pom文件，用idea导入即可
+2、手动使用idea创建，过程中添加相关的工具
+3、应该可以使用命令行创建，这个我就不研究了
+
+
+二、web项目创建
+1、参考：https://www.cnblogs.com/shindo/p/7272646.html，这里没用到maven，总的来说有三件事情
+（1）创建项目，根据业务创建模块，并作一些项目配置。比较重要的是：
+	paths下面的Outputpath 和Test output path，要配置为classes目录
+	dependencies要配置成lib目录
+（2）添加服务器并配置，这里添加的是tomcat9。比较重要的是：开发阶段选择的是本地服务区
+（3）将代码部署到服务器，并作一些配置。我这里写了两个实力模块并作了配置。
+	添加Artifact的时候，会自动选择没添加的模块
+	Application Context可以选择模块名。如果整个项目只有一个模块，则可以不填
+	On 'update' action：资源编辑后是否立即生效，参考：https://www.cnblogs.com/zhangguangju/p/7027904.html
+	On frame deactivation：IDE失去焦点时干什么，比如我们代码写到一半又去聊微信。
+2、使用maven创建web项目，参考：https://www.cnblogs.com/weishenhong/p/5533200.html
+（1）如果没有配置maven，先配置
+（2）创建：new project》maven》选中‘从现有模版创建’》选一个模版，这里选archetype-webapp，它是最简单的web模版》设置GroupId，ArtifacId》设置maven的相关配置，这个可以多做一些了解》其它简单流程
+（3）项目设置：
+	在main目录下创建java、resources子目录
+	把java目录设置source，作为代码根目录。
+	把resources目录设置设为resource，作为resources的根目录
+（4）部署
+3、小结：总体来讲，就项目的配置、编译与部署。使用maven可以更方便的管理依赖，部署方面是相同的。
+
+
+三、IDEA、Maven、SSM

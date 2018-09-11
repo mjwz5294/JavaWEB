@@ -28,3 +28,5 @@ httpclient，commonlang，commonbean，commonio，commonfile，
 2、druid配置
 3、fastjson的配置
 
+三、mybatis整合：https://blog.csdn.net/winter_chen001/article/details/77249029
+
