@@ -54,7 +54,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>DruidStatView</servlet-name>
-    <!--访问路径eg：http://localhost:8888/druid/index.html -->
+    <!--访问路径eg：http://localhost:8080/druid/index.html -->
     <url-pattern>/druid/*</url-pattern>
   </servlet-mapping>
 
