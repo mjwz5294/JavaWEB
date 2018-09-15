@@ -6,7 +6,7 @@
 <generatorConfiguration>
 
     <!--指定特定数据库的jdbc驱动jar包的位置-->
-    <classPathEntry location="D:\develop\maven\my_local_repository\mysql\mysql-connector-java\5.1.39\mysql-connector-java-5.1.39.jar"/>
+    <classPathEntry location="/Users/longgege/.m2/repository/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar"/>
 
     <context id="default" targetRuntime="MyBatis3">
 
@@ -20,15 +20,22 @@
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://localhost:3306/ssm"
                         userId="root"
-                        password="7946521">
+                        password="">
         </jdbcConnection>
 
+        <!--&lt;!&ndash;只生成Java model&ndash;&gt;-->
+        <!--<javaModelGenerator targetPackage="cn.mrdear.entity" targetProject="src/main/java"/>-->
+
+        <!--<sqlMapGenerator targetPackage="mybatis.mapper"  targetProject="src/main/resources"/>-->
+
+        <!--<javaClientGenerator targetPackage="cn.mrdear.mapper" targetProject="src/main/java" type="XMLMAPPER" />-->
+
         <!--只生成Java model-->
-        <javaModelGenerator targetPackage="cn.mrdear.entity" targetProject="F:\Git\JavaWEB\SSM--Demo\src\main\java"/>
+        <javaModelGenerator targetPackage="cn.mrdear.generatordic" targetProject="src/main/java"/>
 
-        <sqlMapGenerator targetPackage="cn.mrdear.entity"  targetProject="F:\Git\JavaWEB\SSM--Demo\src\main\resources"/>
+        <sqlMapGenerator targetPackage="cn.mrdear.generatordic"  targetProject="src/main/java"/>
 
-        <javaClientGenerator targetPackage="cn.mrdear.entity" targetProject="F:\Git\JavaWEB\SSM--Demo\src\main\java" type="XMLMAPPER" />
+        <javaClientGenerator targetPackage="cn.mrdear.generatordic" targetProject="src/main/java" type="XMLMAPPER" />
 
         <table tableName="%" enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false"

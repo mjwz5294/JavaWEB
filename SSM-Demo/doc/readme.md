@@ -3,7 +3,7 @@ SSM项目基本整合,对于IDEA可以直接拉取下来使用.很方便
 
 基本使用工具,下次再介绍
 
-Spring，mybatis，ehcache，druid，fastjson，slf4j，logback，
+Spring，mybatis，ehcache，aspectjrt，druid，fastjson，slf4j，logback，
 httpclient，commonlang，commonbean，commonio，commonfile，
 
 
@@ -30,4 +30,10 @@ httpclient，commonlang，commonbean，commonio，commonfile，
 
 三、mybatis整合：https://blog.csdn.net/winter_chen001/article/details/77249029
     idea搭建ssm框架：https://www.cnblogs.com/hackyo/p/6646051.html
+    
+四、aspectj：https://zhidao.baidu.com/question/394893890.html，因为spring直接使用AspectJ的注解功能，就是说spring自带的AOP使用了aspectjweaver.jar里的某些类。所以要加上这个jar包
+
+五、缓存：https://www.cnblogs.com/qlqwjy/p/7788912.html
+
+六、日志系统：https://blog.csdn.net/chen3749102/article/details/52795786
 
