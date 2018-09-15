@@ -29,4 +29,5 @@ httpclient，commonlang，commonbean，commonio，commonfile，
 3、fastjson的配置
 
 三、mybatis整合：https://blog.csdn.net/winter_chen001/article/details/77249029
+    idea搭建ssm框架：https://www.cnblogs.com/hackyo/p/6646051.html
 
